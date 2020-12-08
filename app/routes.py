@@ -76,8 +76,8 @@ def webhook():
       return make_response('invalid params', 400)
   else: # POST
     body = json.loads(request.data)
-    print(body)
     print("Hi this is webhook")
-    send_message(body)
+    print(body)
+    #send_message(body)
     return ("", 205)
 
